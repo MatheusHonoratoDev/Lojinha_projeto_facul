@@ -1,0 +1,267 @@
+@charset "UTF-8";
+
+
+		p{
+			text-align: center;
+			
+		}
+		body {
+
+			background-color: #dddddd;
+			color: rgba(0,0,0,1);
+		}
+
+
+/* menu */
+
+
+div#menu .menu{
+	position: absolute;
+	list-style:none;
+	font-family: Arial, Helvetica, sans-serif;	
+	text-transform: uppercase;
+	padding: 0px;
+	margin: 1px 145px 0px;
+	
+}
+
+div#menu .menu li{
+	position: relative;
+	float: left;
+	margin: 2px 2px ;
+	padding: 2px;
+	background-color: #006571;
+	border-bottom: 1px solid #144149;
+}
+div#menu .menu li a{color:white; text-decoration:none; padding:5px 10px; display:block;}
+
+div#menu .menu li a:hover{
+	background:#317e90;
+	color:#fff;
+	
+}
+
+div#menu .menu li  ul{
+	transition: 1s;	
+	position: absolute;
+	top: 100%;
+	left: 5px;
+	background-color:#006571;
+	display:none;
+	padding: 0px;
+	margin: 2px;
+	z-index: 1;
+	text-align: left;
+	border: 1px solid #144149;
+	border-radius: 0px 0px 3px 3px;
+	}
+
+div#menu .menu li:hover ul, .menu li.over ul{display:block;}
+
+
+div#menu .menu li ul li{
+	
+	
+	display:block;
+	width:150px;
+	}
+
+
+/* aqui e o sharemarkt */
+
+/* header #cabecalho img#icone {
+	margin: 0px auto;
+} */
+
+header #cabecalho {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	border-bottom: 1px #606060 solid;
+	height: 150px;
+	background-color: #1b5761;
+	
+}
+
+
+header #cabecalho img#carrinho {
+	margin: 20px;
+} 
+
+header #cabecalho input {
+	padding: 10px;
+	width: 300px;
+	border-radius: 40px;
+	border: 1px solid #f9f9f9;
+	background-image: url(https://images.vexels.com/media/users/3/143356/isolated/lists/64e14fe0195557e3f18ea3becba3169b-lupa-de-pesquisa.png);
+	background-size: 24px 24px;
+	background-repeat: no-repeat;
+	background-position: right 10px center;
+}
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Titillium+Web:ital,wght@0,200;1,200&display=swap');
+
+@font-face {
+	font-family: 'fontelogo' ;
+	src: url("../_fonts/bubblegum-sans-regular.otf");
+
+}
+
+		
+		body {
+
+			background-color: #dddddd;
+			color: rgba(0,0,0,1);
+		}
+
+
+div#interface {
+	width: 900px;
+	max-width: calc(100% - 40px); 
+	background-color: #ffffff;
+	margin: -20px auto 0px auto;
+	box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+	padding: 10px;
+	}
+
+
+
+
+/* formatacao de imagem com legendas */
+
+
+
+figure.foto-legenda {
+	width: 25%;
+	margin: 0px;
+	position: relative;
+	border: 0px solid white;
+	box-shadow: 0px 0px 0px black;
+
+}
+
+figure.foto-legenda img {
+	width: 100%;
+	height: 120px;
+	object-fit: contain;
+}
+
+figure.foto-legenda figcaption {
+	opacity: 0;
+	position: absolute;
+	top: 0px;
+	background-color: rgba(0,0,0,0.2);
+	color: white;
+	width: 30%;
+	height:100%;
+	padding: 0px;
+	box-sizing: border-box;
+	transition: opacity 1s;
+}
+figure.foto-legenda:hover figcaption {
+
+	opacity: 1;
+}
+
+figure.foto-legenda label {
+	text-transform: uppercase;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+}
+
+
+section#corpo {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 80px;
+	padding-right: 15px;
+}
+section#corpo figure.foto-legenda {
+	border: 1px solid black;
+	border-radius: 5px;
+	margin: 25px;
+	padding: 10px;
+	background-color:#e1eaeb;
+
+}
+
+
+section#corpo figure.foto-legenda p {
+	padding-top: 10px ;
+    border-top: 1px solid #006571;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:black;
+	
+}
+
+footer#rodape {
+
+	clear: both;
+	border-top: 1px solid #606060;
+	
+}
+
+footer#rodape p {
+	text-align: center;
+}
+
+section#corpo figure.foto-legenda button{
+	background-color: #3d9db3;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    color: white;
+    border: 0px;
+    cursor: pointer;
+}
+section#corpo figure.foto-legenda input{
+
+margin: 5px 6px;
+padding: 8px;
+	
+}
+section#corpo figure.foto-legenda input#numeros{
+    font-size: 20px;
+    padding:6px;
+	width: 100px;
+}
+
+section#corpo figure.foto-legenda p#unidades {
+
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #144149;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    margin-top: 10px;
+	padding-left: -50px;
+	padding-right: 10px;
+    color: white;
+    border: 2px solid white;
+	border-radius: 5px;
+	text-transform: uppercase;
+	
+}
+
+input[type=number]::-webkit-inner-spin-button { 
+  
+
+  all: unset; 
+  min-width: 21px;
+  min-height: 45px;
+  margin: 15px;
+  padding: 0px;
+  background-image: 
+  linear-gradient(to top, transparent 0px, transparent 16px, #fff 16px, #fff 26px, transparent 26px, transparent 35px, #000 35px,#000 36px,transparent 36px, transparent 40px),
+  linear-gradient(to right, transparent 0px, transparent 10px, #000 10px, #000 11px, transparent 11px, transparent 21px);
+  transform: rotate(90deg) scale(0.8, 0.9);
+  cursor:pointer;
+}

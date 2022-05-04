@@ -1,0 +1,79 @@
+body {
+    background-color: #eeeeee;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0px;
+}
+
+div#banana {
+    margin: 100px auto;
+    width: 400px;
+    border: 1px solid #bfd3d5;
+    background-color: #f6f6f6;
+    border-radius: 5px;
+}
+div#broco {
+    padding: 15px;
+}
+
+div#broco h1 {
+	margin-bottom: 20px ;
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 15px;
+    border-bottom: 1px solid #006571;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:darkcyan;
+}
+div#broco label {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#7a8d90;
+
+}
+
+div#broco input[type=text], input[type=password] {
+   margin-top: 3px;
+    margin-bottom: 20px ;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+div#broco input[type=submit] {
+    background-color: #3d9db3;
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    margin-top: 10px;
+    color: white;
+    border: 0px;
+    cursor: pointer;
+}
+::placeholder {
+    color: rgb(187, 187, 187);
+    font-style: italic;
+}
+
+div#churros p{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#494848de;
+}
+
+
+div#churros p button {
+    float: right;
+    color: #3d9db3;
+    border: 1px solid #edf0bb;
+    background-color: white;
+}
+
+div#churros {
+    background-color: #e1eaeb;
+    padding: 15px;
+    margin-bottom: 1px;
+}
